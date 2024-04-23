@@ -12,7 +12,7 @@ let {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access
 //import mongoose from 'mongoose';
 //import cors from 'cors';
 var indexRouter = require('./routes/index');
-var adminRouter = require('./routes/admin');
+//var adminRouter = require('./routes/admin');
 
 var app = express();
 //database name
@@ -50,7 +50,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/admin', adminRouter);
+//app.use('/admin', adminRouter);
 
 //CORS setup
 //app.use(cors());
