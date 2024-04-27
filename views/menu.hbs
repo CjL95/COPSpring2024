@@ -1,11 +1,36 @@
 <main class="container-fluid {{pageMainClass}}">
 	<section class="row pageTitle">
-        <div class="title">
+        <div class="col-12 title">
             <h1>{{title}}</h1>
         </div>
 	</section>	
 	<section class="row menuSection">
+        <!-- <div class="menu-group">
+        <div class="menu-item">
+        <div class="row">
+        <img src="https://codeonpointspringfinal2024.s3.amazonaws.com/assets/item_images/breads/baguette-sandwich.webp" alt="Baguette Sandwhich">
+        <h2 class="menu-group-heading">Breads</h2>
+        <span class="menu-item-name">Baguette Sandwich</span>
+        <span class="menu-item-price">$10.00</span>
+        <img src="https://codeonpointspringfinal2024.s3.amazonaws.com/assets/item_images/breads/focaccia-loaf.webp" alt="Focaccia 
+        Loaf">
+        <span class="menu-item-name">Focaccia Loaf</span>
+        <span class="menu-item-price">$8.50</span>
+        <img src="https://codeonpointspringfinal2024.s3.amazonaws.com/assets/item_images/breads/multigrain-loaf.webp" alt="Multigrain Loaf">
+        <span class="menu-item-name">Multigrain Loaf</span>
+        <span class="menu-item-price">$8.00</span>
+        <img src="https://codeonpointspringfinal2024.s3.amazonaws.com/assets/item_images/breads/rye-loaf.webp" alt="Rye Loaf">
+        <span class="menu-item-name">Rye Loaf</span>
+        <span class="menu-item-price">$9.00</span> -->
         {{#each items}}
+        <section>
+                <h2>{{this.name}}</h2>
+        </section>
+         
         {{/each}}
+        
+        </div>
+        </div>
+        </div>
 	</section>	
 </main>
