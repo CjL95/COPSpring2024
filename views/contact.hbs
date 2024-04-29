@@ -3,9 +3,37 @@
 		<h1>{{title}}</h1>
 	</section>	
     <section class="row contactInfo">
-		
+		<h2>Get in Touch!</h2>
+		<address>
+			Address: 24 Sweets ln, Sweetville 52024<br>
+			Phone: 502-555-2024<br>
+			Email: Sweettreatsbakery@treats.com<br>
+		</address>
 	</section>	
     <section class="row contactForm">
-		
+		<h3>Send Message</h3>
+		<div class="container">
+			<form action="action_page.php">
+			  <label for="fname">First Name</label>
+              <input type="text" id="fname" name="first name" placeholder="Your First Name...">
+			  <label for="lname">Last Name</label>
+			  <input type="text" id="lname" name="lastname" placeholder="Your Last Name...">
+			  <label for="email">Email</label>
+			  <input type="text" id="email" name="email" placeholder="Your Email...">
+			  <label for="contact">Phone</label>
+			  <input type="text" id="contact" name="phone" placeholder="Your Phone Number...">
+			  <label for="subject">Subject</label>
+			  <select id="subject" name="subject">
+              <option value="question">I have a question?</option>
+			  <option value="suggestion">Share a suggestion</option>
+			  <option value="catering">Catering Request</option>
+			  <option value="rewards">My Sweet Rewards</option>
+			  <option value="concern">Issues or Concern?</option>
+			  </select>
+			  <label for="message">Message</label>
+			  <textarea id="message" name="message" placeholder="Type your message here..." style="height:200px;"></textarea>
+			  <input type="submit" value="Submit">
+			</form>
+        </div>
 	</section>	
 </main>
