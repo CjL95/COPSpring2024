@@ -14,39 +14,27 @@
         </div>
     </article>
 	</section>
-    <section class="row featuredItems">
-        <div class="container">
-            <div class="row">
-            <div class="m-auto">
-            <h2>Our Specialties</h2>
-        </div>
-        </div>
-        </div>
-        <div class="row">
-        <div class="card">
-            <div class="col-12 col-md-4">
-            <img src="c:\Users\danth\Downloads\mascarpone-danish.webp" alt="Mascarpone Danish">
-           </div>
-          </div>
-        </div>
-          <div class="row">
-            <div class="card">
-             <div class="col-12 col-md-4">
-               <img src="c:\Users\danth\Downloads\iced-latte.webp" alt="Iced Latte">
-              </div>
+  <section class="row featuredItems">
+    <div class="col-12">
+      <h2>Our Specialties</h2>
+    </div>
+    <section class="col-12">
+      <div class="row">
+        {{#each feat}}
+          <article class="col-12 col-lg-4 card featCard">
+            <img src={{this.image}} class="card-img-top" alt={{this.description}}>
+            <div class="card-body">
+              <p class="card-text">{{this.itemName}}</p>
             </div>
-        </div>
-        <div class="row">
-         <div class="card">
-            <div class="col-12 col-md-4">
-              <img src="c:\Users\danth\Downloads\red-velvet-cake.webp" alt="Red Velvet Cake">
-            </div>
-         </div>    
-        </div>
-        <p>You can't buy Happiness, but you can buy <em>freshly baked</em> goodies with love at first bite here at <em>Sweet Treats Bakery</em></p>
+          </article>
+        {{/each}}
+      </div>
+      
     </section>
-    <section class="row aboutUsHome">
-      <h3>About Us</h3>
-      <p>Sweet Treats Bakery has been baking its neighborhood's favorite treat's since 2024 and is located in San Francisco, CA. From baking our bread's, pastries, and cakes from scratch with natural ingredients to even our delicious latte's visiting our bakery will put the icing on your cake! Our goal is to serve and deliver freshly baked sweet treats to our customer's and remind them that life is always sweet!</p>
-    </section>
+    <p>You can't buy Happiness, but you can buy <em>freshly baked</em> goodies with love at first bite here at <em>Sweet Treats Bakery</em></p>
+  </section>
+  <section class="row aboutUsHome">
+    <h3>About Us</h3>
+    <p>Sweet Treats Bakery has been baking its neighborhood's favorite treat's since 2024 and is located in San Francisco, CA. From baking our bread's, pastries, and cakes from scratch with natural ingredients to even our delicious latte's visiting our bakery will put the icing on your cake! Our goal is to serve and deliver freshly baked sweet treats to our customer's and remind them that life is always sweet!</p>
+  </section>
 </main>

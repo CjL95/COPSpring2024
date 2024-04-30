@@ -1,8 +1,80 @@
-body {
-  /*padding: 50px;*/
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/*
+Main/Background: #FFFFFF
+Accent: #FF69B4
+Primary/Text: #333333
+Highlight/Border: #C0C0C0
+Tertiary/Shadow: #F2F2F2
+
+*/
+:root{
+  --main-color: #FFFFFF;
+  --accent-color: #FF69B4;
+  --primary-color: #333333;
+  --highlight-color: #C0C0C0;
+  --tertiary-color: #F2F2F2;
+  --main-font: "Montserrat", "sans-serif";
+  --secondary-font: "Josefin Sans", "sans-serif";
 }
 
-/*a {
-  color: #00B7FF;
-}*/
+/*
+General Styles
+__________________________________
+*/
+
+body {
+  /*padding: 50px;*/
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+h1,h2,h3{
+  font-family: var(--secondary-font);
+}
+
+/*
+Header and Footer Styles
+__________________________________
+*/
+
+
+
+
+
+/*
+Homepage Styles
+__________________________________
+*/
+
+
+.featCard img{
+  width: 250px;
+  height: auto;
+}
+
+/*
+Contact Styles
+__________________________________
+*/
+
+
+
+
+/*
+Menu Styles
+__________________________________
+*/
+
+
+
+
+/*
+Animations
+__________________________________
+*/
+
+
+
+/*
+Media Queries
+__________________________________
+*/
