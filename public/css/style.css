@@ -14,8 +14,11 @@ Tertiary/Shadow: #F2F2F2
   --tertiary-color: #F2F2F2;
   --main-font: "Montserrat", "sans-serif";
   --secondary-font: "Josefin Sans", "sans-serif";
+  --box-shadow: 0 0 5px #C0C0C0;
 }
-
+*{
+  box-sizing: border-box;
+}
 /*
 General Styles
 __________________________________
@@ -25,12 +28,21 @@ body {
   /*padding: 50px;*/
   font-family: var(--main-font);
   font-weight: 400;
+  font-size: 1.2rem;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+main{
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #FFFFFF;
   margin: 0px;
   font-size: 14px;
   line-height: 1.5;
 }
-
 h1,h2,h3{
  font-family: var(--secondary-font);
  font-size: 22px;
@@ -45,10 +57,57 @@ Header and Footer Styles
 __________________________________
 */
 
+/*Header and Footer*/
+header, footer{
+  background-color: var(--tertiary-color);
+  font-family: var(--secondary-font);
+  box-shadow: var(--box-shadow);
+}
 
+/*Header*/
+.mainNav{
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  min-height: 10vh;
+}
+.logo{
+  width: 130px;
+  height: auto;
+}
+.navLink{
+  color: black;
+}
+.navLink:hover{
+  color: var(--accent-color);
+}
 
-
-
+/*Footer*/
+footer{
+  min-height: 10vh;
+  padding: 10px;
+}
+.footerColWrapper{
+  padding: 10px;
+}
+.footerCol{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerColWrapper .footerCol:nth-child(2){
+  justify-content: end;
+}
+.footerCol section{
+  display: flex;
+  flex-direction: column;
+}
+.socialIcon{
+  color: var(--accent-color);
+  font-size: 1.5rem;
+}
+.socialIcon:hover{
+  color: var(--primary-color);
+}
 /*
 Homepage Styles
 __________________________________
