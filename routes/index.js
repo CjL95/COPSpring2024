@@ -1,4 +1,4 @@
-import { Stubs, FeatStubs } from '../stubs/stubs.js';
+import { FeatStubs, AllStubs } from '../stubs/stubs.js';
 var express = require('express');
 var router = express.Router();
 /* GET home page */
@@ -20,7 +20,7 @@ router.get('/', (req, res, next) => {
 		title: 'Our Menu',
 		msg: 'This sample template should help get you on your way.',
 		pageMainClass: 'pgMenu',
-		items: Stubs
+		items: AllStubs
 	});
 });
 

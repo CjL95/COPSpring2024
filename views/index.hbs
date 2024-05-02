@@ -1,16 +1,17 @@
-<main class="container-fluid {{pageMainClass}}">
+<main class="container {{pageMainClass}}">
 	<section class="row hero">
     <article class="col-12">
         <figure class="row heroWelcome">
           <figcaption class="col-6">
-            <h1>Welcome to Sweet Treats Bakery</h1> 
+            <h1>Welcome to Sweet Treats Bakery!</h1> 
+            <p class="heroTxt">A bakery where dreams rise, making life a little sweeter! And the artistry of our bakers is tasted in every bite!</p>
           </figcaption>
           <div class="col-6">
             <img src="https://codeonpointspringfinal2024.s3.amazonaws.com/assets/item_images/breads/baguette-sandwich.webp">
           </div>
         </figure>
         <div class="row heroIntro">
-          <p>Welcome to <em>Sweet Treats Bakery!</em> A bakery where dream's rise making life a little sweeter and the artistry of our baker's are tasted in every bite.</p>
+          
         </div>
     </article>
 	</section>
@@ -19,22 +20,25 @@
       <h2>Our Specialties</h2>
     </div>
     <section class="col-12">
-      <div class="row">
+      <div class="row g-4">
         {{#each feat}}
-          <article class="col-12 col-lg-4 card featCard">
-            <img src={{this.image}} class="card-img-top" alt={{this.description}}>
-            <div class="card-body">
-              <p class="card-text">{{this.itemName}}</p>
-            </div>
+          <article class="col-12 col-sm-6 col-lg-4">
+            <figure class="card featCard">
+              <img src={{this.image}} class="" alt={{this.description}}>
+              <figcaption class="card-body">
+                <h3 class="card-text">{{this.itemName}}</h3>
+              </figcaption>
+            </figure>
           </article>
         {{/each}}
       </div>
-      
     </section>
-    <p>You can't buy Happiness, but you can buy <em>freshly baked</em> goodies with love at first bite here at <em>Sweet Treats Bakery</em></p>
   </section>
   <section class="row aboutUsHome">
-    <h3>About Us</h3>
-    <p>Sweet Treats Bakery has been baking its neighborhood's favorite treat's since 2024 and is located in San Francisco, CA. From baking our bread's, pastries, and cakes from scratch with natural ingredients to even our delicious latte's visiting our bakery will put the icing on your cake! Our goal is to serve and deliver freshly baked sweet treats to our customer's and remind them that life is always sweet!</p>
+    <div class="col-12">
+      <h3>About Us</h3>
+      <p>You can't buy Happiness, but you can buy <em>freshly baked</em> goodies with love at first bite here at <em>Sweet Treats Bakery</em><p>
+      <p>Sweet Treats Bakery has been baking its neighborhood's favorite treat's since 2024 and is located in San Francisco, CA. From baking our bread's, pastries, and cakes from scratch with natural ingredients to even our delicious latte's visiting our bakery will put the icing on your cake! Our goal is to serve and deliver freshly baked sweet treats to our customer's and remind them that life is always sweet!</p>
+    </div>
   </section>
 </main>
