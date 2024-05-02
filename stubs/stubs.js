@@ -79,7 +79,7 @@ const AllItems = [
             },
             {
                 category: "breads",
-                itemName: "Sourdough",
+                itemName: "Sourdough Loaf",
                 price: 10,
                 description: "A tangy and chewy bread made from a fermented dough."
             },
@@ -114,7 +114,7 @@ const AllItems = [
             },
             {
                 category: "pastries",
-                itemName: "Pain Au Chocolat",
+                itemName: "Pain Au Chocolate",
                 price: 10,
                 description: "A French pastry consisting of a light, flaky croissant-like dough with a bar of chocolate in the center."
             },
